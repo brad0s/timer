@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="bradOS.favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Orbitron&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Courier+Prime&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=ZCOOL+QingKe+HuangYou&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="timer.css">
+    <title>Timer</title>
+</head>
+<body>
+    <div class="container">
+
+        <section id="timer">
+            <div class="timer">
+                <div id="minDisplay">
+                    00
+                </div>
+                <div>:</div>
+                <div id="secDisplay">
+                    00
+                </div>
+            </div>
+        </section>
+        
+        <section id="timer-opts">
+            <div class="form-group">
+                <div>
+                    <input type="number" name="min" id="minSelect" list="minSelectList">
+                    <datalist id="minSelectList"></datalist>
+                    <input type="number" name="min" id="secSelect" list="secSelectList">
+                    <datalist id="secSelectList"></datalist>
+                    <!-- <select id="minSelect"></select>
+                    <select id="secSelect"></select> -->
+                </div>
+                <div>
+                    <button type="button" id="start" class="btn">Start</button>
+                    <button type="button" id="stop" class="btn">Stop</button>
+                    <button type="button" id="reset" class="btn">Reset</button>
+                </div>
+            </div>
+        </section>
+
+    </div>
+    
+</body>
+<script src="timer.js"></script>
+</html>

@@ -1,0 +1,66 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  color: var(--white);
+  font-family: 'Orbitron', sans-serif;
+}
+:root {
+  --black: #272727;
+  --white: #fff;
+  --orange: orange;
+}
+body {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  background-color: var(--black);
+}
+body .container {
+  text-align: center;
+  margin: 50px 10px auto;
+  width: 100%;
+}
+body .container h1 {
+  text-transform: uppercase;
+}
+body .container #timer .timer > div {
+  display: inline-block;
+  font-size: 5rem;
+}
+body .container #timer .timer #minDisplay,
+body .container #timer .timer #secDisplay {
+  width: 131px;
+}
+body .container #timer-opts {
+  margin-top: 50px;
+}
+body .container #timer-opts .form-group > div {
+  margin: 24px 0;
+}
+body .container #timer-opts .form-group > div input,
+body .container #timer-opts .form-group > div button {
+  border: 2px solid var(--black);
+  border-radius: 8px;
+  font-size: 0.8rem;
+  background-color: var(--orange);
+}
+body .container #timer-opts .form-group > div:first-child {
+  display: flex;
+  justify-content: center;
+}
+body .container #timer-opts .form-group > div:first-child input {
+  height: 40px;
+  width: 25%;
+  margin: 0 10px;
+}
+body .container #timer-opts .form-group > div:last-child {
+  display: flex;
+  justify-content: space-evenly;
+}
+body .container #timer-opts .form-group > div:last-child button {
+  height: 40px;
+  width: 25%;
+}
